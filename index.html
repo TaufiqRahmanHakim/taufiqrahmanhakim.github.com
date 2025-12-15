@@ -421,6 +421,11 @@
         }
         .btn-project:hover { background: var(--ub-dark-aubergine); }
 
+        .action-buttons {
+            display: flex;       /* Membuat anak elemen menjadi fleksibel (horizontal) */
+            gap: 10px;           /* Memberikan jarak antar tombol */
+            align-items: center; /* Meratakan posisi vertikal (opsional) */
+        }
 
         /* --- CONTACT --- */
         #contact {
@@ -767,7 +772,7 @@
                                 <div class="dot"></div><div class="dot"></div>
                             </div>
                             <div class="project-body">
-                                <h3 class="project-title">Proxmox Management API (thesis project)</h3>
+                                <h3 class="project-title">Proxmox Management API</h3>
                                 <img src="/src/ss-proyek1-1.jpeg" class="cert-img">
                                 <div class="tech-tags">
                                     <span class="tag">.NET Core</span>
@@ -778,7 +783,8 @@
 
                                 </div>
                                 <p class="project-desc">API for Proxmox Management using ASP.NET COre as core system and Golang as Websocket novnc.</p>
-                                <a href="#" class="btn-project">View Code</a>
+                                <a href="" class="btn-project">View Code</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -790,14 +796,19 @@
                                 <div class="dot"></div><div class="dot"></div>
                             </div>
                             <div class="project-body">
-                                <h3 class="project-title">Vue Proxmox Dashboard</h3>
+                                <h3 class="project-title">Vue-TS Proxmox Dashboard</h3>
+                                <img src="/src/Screenshot 2025-12-15 175519.png">
                                 <div class="tech-tags">
                                     <span class="tag">Vue 3</span>
                                     <span class="tag">Vite</span>
                                     <span class="tag">Tailwind</span>
+                                    <span class="tag">Shadcn</span>
                                 </div>
-                                <p class="project-desc">Responsive admin panel template with real-time data visualization charts.</p>
-                                <a href="#" class="btn-project">Live Demo</a>
+                                <p class="project-desc">Responsive admin panel template</p>
+                                <div class="action-buttons">
+                                    <a href="https://github.com/TaufiqRahmanHakim/VirtualMU-TS-VUE" class="btn-project" target="_blank">View Code</a>
+                                    <a href="https://ed8d7305.virtualmu-ts-vue.pages.dev/profile" class="btn-project" target="_blank">View Live</a>
+                                </div>
                             </div>
                         </div>
                     </div>
