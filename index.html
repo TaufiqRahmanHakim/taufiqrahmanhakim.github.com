@@ -14,17 +14,62 @@
     
     <style>
         /* --- UBUNTU COLOR PALETTE & VARIABLES --- */
-        :root {
+        /* :root {
             --ub-orange: #E95420;
             --ub-aubergine: #772953;
             --ub-dark-aubergine: #2C001E;
             --ub-mid-aubergine: #5E2750;
             --ub-warm-grey: #AEA79F;
             --ub-cool-grey: #333333;
-            --ub-white: #F7F7F7;
+            --ub-white: #ffffff;
             --terminal-bg: #300A24;
             --terminal-text: #FFFFFF;
+        } */
+        /* :root {
+            --ub-orange: #16a085; 
+            --ub-aubergine: #2c3e50;
+            --ub-dark-aubergine: #1a252f;
+            --ub-mid-aubergine: #34495e;
+            --ub-warm-grey: #ffffff;
+            --ub-cool-grey: #2c3e50;
+            --ub-white: #f8f9fa;
+            --terminal-bg: #0f131a;
+            --terminal-text: #2ecc71; 
+        } */
+        :root {
+            --ub-orange: #0078D4; 
+            --ub-aubergine: #102a43;
+            --ub-dark-aubergine: #0b1a2a;
+            --ub-mid-aubergine: #243b53;
+            --ub-warm-grey: #9fb3c8;
+            --ub-cool-grey: #102a43;
+            --ub-white: #ffffff;
+            --terminal-bg: #0a0e14;
+            --terminal-text: #f0f4f8;
         }
+
+        /* :root {
+            --ub-orange: #0b57a4;
+            --ub-aubergine: #294172;
+            --ub-dark-aubergine: #1c2e52;
+            --ub-mid-aubergine: #3a5a9b;
+            --ub-warm-grey: #e1e8f0;
+            --ub-cool-grey: #1c2e52;
+            --ub-white: #f5f8fa;
+            --terminal-bg: #0f192b;
+            --terminal-text: #64b5f6;
+        } */
+         /* :root {
+            --ub-orange: #5d42d3;
+            --ub-aubergine: #2d3436;
+            --ub-dark-aubergine: #181a1b;
+            --ub-mid-aubergine: #414b4d;
+            --ub-warm-grey: #dfe6e9;
+            --ub-cool-grey: #2d3436;
+            --ub-white: #f0f2f5;
+            --terminal-bg: #0f1011;
+            --terminal-text: #a29bfe;
+        } */
 
         /* --- RESET & BASE STYLES --- */
         * {
@@ -90,6 +135,7 @@
             justify-content: center;
             align-items: center;
             padding: 2rem;
+            position: relative;
             
             /* Fix: Force full width background */
             max-width: 100%;
@@ -136,6 +182,10 @@
             color: var(--ub-white);
             font-size: 1.1rem;
             line-height: 1.6;
+
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
         }
 
         .prompt { color: var(--ub-orange); font-weight: bold; }
@@ -472,11 +522,65 @@
 
         /* --- FOOTER --- */
         footer {
-            background-color: #1a0512;
+            background-color: var(--ub-dark-aubergine);
             color: #777;
             text-align: center;
             padding: 1.5rem;
             font-size: 0.85rem;
+        }
+        
+        section .air{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+        background-size: 1000px 100px
+        }
+        section .air.air1{
+        animation: wave 30s linear infinite;
+        z-index: 1000;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+        }
+        section .air.air2{
+        animation: wave2 15s linear infinite;
+        z-index: 999;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom: 10px;
+        }
+        section .air.air3{
+        animation: wave 30s linear infinite;
+        z-index: 998;
+        opacity: 0.2;
+        animation-delay: -2s;
+        bottom: 15px;
+        }
+        section .air.air4{
+        animation: wave2 5s linear infinite;
+        z-index: 997;
+        opacity: 0.7;
+        animation-delay: -5s;
+        bottom: 20px;
+        }
+        @keyframes wave{
+        0%{
+            background-position-x: 0px; 
+        }
+        100%{
+            background-position-x: 1000px; 
+        }
+        }
+        @keyframes wave2{
+        0%{
+            background-position-x: 0px; 
+        }
+        100%{
+            background-position-x: -1000px; 
+        }
         }
 
         /* --- ANIMATIONS --- */
@@ -511,9 +615,9 @@
             <a href="#projects">./projects</a>
             <a href="#contact">./contact</a>
         </div>
+        
     </nav>
 
-    <!-- PROFILE (HERO) -->
     <section id="profile">
         <div class="terminal-window">
             <div class="terminal-header">
@@ -536,13 +640,22 @@
                 <br>
                 <div class="command-line">
                     <span class="prompt">taufiq@portofolio:</span><span class="path">~</span>$ cat skills.txt
+                    
                 </div>
                 <div class="typewriter-text" id="typewriter"></div>
                 <span class="cursor"></span>
                 <br><br>
                 <a href="#projects" class="btn-cta">ls projects</a>
+
             </div>
+            
         </div>
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+
+        
     </section>
                 
     <!-- SKILLS / TECH STACK -->
