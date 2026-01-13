@@ -395,7 +395,12 @@
 
         .project-body { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;}
         .project-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; color: var(--ub-cool-grey); }
-        
+        .project-body img {
+            width: 100%;
+            aspect-ratio: 16 / 9;   
+            object-fit: cover;     
+            border-radius: 8px;
+        }
         .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
         .tag {
             background-color: rgba(233, 84, 32, 0.1);
@@ -535,11 +540,11 @@
                 <div class="typewriter-text" id="typewriter"></div>
                 <span class="cursor"></span>
                 <br><br>
-                <a href="#projects" class="btn-cta">Sudo Project</a>
+                <a href="#projects" class="btn-cta">ls projects</a>
             </div>
         </div>
     </section>
-
+                
     <!-- SKILLS / TECH STACK -->
     <section id="tech">
         <div class="section-header">
@@ -773,7 +778,7 @@
                             </div>
                             <div class="project-body">
                                 <h3 class="project-title">Proxmox Management API</h3>
-                                <img src="/src/ss-proyek1-1.jpeg" class="cert-img">
+                                <img src="/src/ss-proyek1-1.jpeg" >
                                 <div class="tech-tags">
                                     <span class="tag">.NET Core</span>
                                     <span class="tag">Golang</span>
@@ -790,7 +795,7 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="slider-item">
+                    <div class="slider-item" >
                         <div class="project-card">
                             <div class="project-header">
                                 <div class="dot"></div><div class="dot"></div>
@@ -809,6 +814,27 @@
                                     <a href="https://github.com/TaufiqRahmanHakim/VirtualMU-TS-VUE" class="btn-project" target="_blank">View Code</a>
                                     <a href="https://ed8d7305.virtualmu-ts-vue.pages.dev/profile" class="btn-project" target="_blank">View Live</a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="slider-item">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="dot"></div><div class="dot"></div>
+                            </div>
+                            <div class="project-body">
+                                <h3 class="project-title">Redis/Garnet Caching Service</h3>
+                                <img src="./src/k6 Report FusionCache.png" class="project-item">
+                                <div class="tech-tags">
+                                    <span class="tag">Redis/Garnet</span>
+                                    <span class="tag">k6</span>
+                                    <span class="tag">FusionCache</span>
+                                    <span class="tag">Benchmark API</span>
+
+                                </div>
+                                <p class="project-desc">Hybrid L1/L2 caching implementation validated by k6 benchmarks for sub-millisecond API latency.</p>
+                                <a href="#" class="btn-project">View Code</a>
                             </div>
                         </div>
                     </div>
@@ -831,63 +857,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Project 4 -->
-                    <div class="slider-item">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <div class="dot"></div><div class="dot"></div>
-                            </div>
-                            <div class="project-body">
-                                <h3 class="project-title">POS Desktop App</h3>
-                                <div class="tech-tags">
-                                    <span class="tag">C#</span>
-                                    <span class="tag">WPF</span>
-                                    <span class="tag">SQL Server</span>
-                                </div>
-                                <p class="project-desc">Point of Sales system for retail with inventory management.</p>
-                                <a href="#" class="btn-project">Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="slider-item">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <div class="dot"></div><div class="dot"></div>
-                            </div>
-                            <div class="project-body">
-                                <h3 class="project-title">Redis Caching Service</h3>
-                                <div class="tech-tags">
-                                    <span class="tag">Redis</span>
-                                    <span class="tag">Node.js</span>
-                                </div>
-                                <p class="project-desc">High-performance caching middleware to reduce DB load.</p>
-                                <a href="#" class="btn-project">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6 -->
-                    <div class="slider-item">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <div class="dot"></div><div class="dot"></div>
-                            </div>
-                            <div class="project-body">
-                                <h3 class="project-title">Portfolio V1</h3>
-                                <div class="tech-tags">
-                                    <span class="tag">HTML</span>
-                                    <span class="tag">CSS</span>
-                                    <span class="tag">JS</span>
-                                </div>
-                                <p class="project-desc">My first personal website created with vanilla technologies.</p>
-                                <a href="#" class="btn-project">Visit</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
